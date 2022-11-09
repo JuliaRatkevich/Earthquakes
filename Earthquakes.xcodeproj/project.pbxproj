@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4EC02782291AEEF700D6717D /* EarthquakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC02781291AEEF700D6717D /* EarthquakesApp.swift */; };
-		4EC02784291AEEF700D6717D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC02783291AEEF700D6717D /* ContentView.swift */; };
 		4EC02786291AEF0200D6717D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC02785291AEF0200D6717D /* Assets.xcassets */; };
 		4EC02789291AEF0200D6717D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC02788291AEF0200D6717D /* Preview Assets.xcassets */; };
 		4EC02793291AEF0300D6717D /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC02792291AEF0300D6717D /* EarthquakesTests.swift */; };
 		4EC0279D291AEF0300D6717D /* EarthquakesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC0279C291AEF0300D6717D /* EarthquakesUITests.swift */; };
 		4EC0279F291AEF0300D6717D /* EarthquakesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC0279E291AEF0300D6717D /* EarthquakesUITestsLaunchTests.swift */; };
+		4EC027AD291AEFFD00D6717D /* EarthquakesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027AC291AEFFD00D6717D /* EarthquakesModel.swift */; };
+		4EC027AF291AF3CD00D6717D /* EarthquakesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027AE291AF3CD00D6717D /* EarthquakesService.swift */; };
+		4EC027B1291AF6B600D6717D /* APIEarthquakesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027B0291AF6B600D6717D /* APIEarthquakesService.swift */; };
+		4EC027B3291BA6D900D6717D /* EarthquakesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027B2291BA6D900D6717D /* EarthquakesViewModel.swift */; };
+		4EC027B5291BBDB500D6717D /* EarthquakesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027B4291BBDB500D6717D /* EarthquakesListView.swift */; };
+		4EC027B7291BC26D00D6717D /* EarthquakesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC027B6291BC26D00D6717D /* EarthquakesRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		4EC0277E291AEEF700D6717D /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC02781291AEEF700D6717D /* EarthquakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesApp.swift; sourceTree = "<group>"; };
-		4EC02783291AEEF700D6717D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EC02785291AEF0200D6717D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC02788291AEF0200D6717D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EC0278E291AEF0300D6717D /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,13 @@
 		4EC02798291AEF0300D6717D /* EarthquakesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC0279C291AEF0300D6717D /* EarthquakesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesUITests.swift; sourceTree = "<group>"; };
 		4EC0279E291AEF0300D6717D /* EarthquakesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EC027AC291AEFFD00D6717D /* EarthquakesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesModel.swift; sourceTree = "<group>"; };
+		4EC027AE291AF3CD00D6717D /* EarthquakesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesService.swift; sourceTree = "<group>"; };
+		4EC027B0291AF6B600D6717D /* APIEarthquakesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEarthquakesService.swift; sourceTree = "<group>"; };
+		4EC027B2291BA6D900D6717D /* EarthquakesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesViewModel.swift; sourceTree = "<group>"; };
+		4EC027B4291BBDB500D6717D /* EarthquakesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesListView.swift; sourceTree = "<group>"; };
+		4EC027B6291BC26D00D6717D /* EarthquakesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesRowView.swift; sourceTree = "<group>"; };
+		4EC027B8291BC82200D6717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +105,9 @@
 		4EC02780291AEEF700D6717D /* Earthquakes */ = {
 			isa = PBXGroup;
 			children = (
+				4EC027B8291BC82200D6717D /* Info.plist */,
+				4EC027AB291AEF9C00D6717D /* List */,
 				4EC02781291AEEF700D6717D /* EarthquakesApp.swift */,
-				4EC02783291AEEF700D6717D /* ContentView.swift */,
 				4EC02785291AEF0200D6717D /* Assets.xcassets */,
 				4EC02787291AEF0200D6717D /* Preview Content */,
 			);
@@ -125,6 +137,19 @@
 				4EC0279E291AEF0300D6717D /* EarthquakesUITestsLaunchTests.swift */,
 			);
 			path = EarthquakesUITests;
+			sourceTree = "<group>";
+		};
+		4EC027AB291AEF9C00D6717D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4EC027AC291AEFFD00D6717D /* EarthquakesModel.swift */,
+				4EC027AE291AF3CD00D6717D /* EarthquakesService.swift */,
+				4EC027B0291AF6B600D6717D /* APIEarthquakesService.swift */,
+				4EC027B2291BA6D900D6717D /* EarthquakesViewModel.swift */,
+				4EC027B4291BBDB500D6717D /* EarthquakesListView.swift */,
+				4EC027B6291BC26D00D6717D /* EarthquakesRowView.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC02784291AEEF700D6717D /* ContentView.swift in Sources */,
+				4EC027AD291AEFFD00D6717D /* EarthquakesModel.swift in Sources */,
+				4EC027B5291BBDB500D6717D /* EarthquakesListView.swift in Sources */,
+				4EC027B1291AF6B600D6717D /* APIEarthquakesService.swift in Sources */,
+				4EC027B7291BC26D00D6717D /* EarthquakesRowView.swift in Sources */,
+				4EC027B3291BA6D900D6717D /* EarthquakesViewModel.swift in Sources */,
+				4EC027AF291AF3CD00D6717D /* EarthquakesService.swift in Sources */,
 				4EC02782291AEEF700D6717D /* EarthquakesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Earthquakes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Earthquakes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +478,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Earthquakes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Earthquakes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
