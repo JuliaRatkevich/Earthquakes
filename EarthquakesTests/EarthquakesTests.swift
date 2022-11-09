@@ -18,19 +18,70 @@ class EarthquakesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testFailureState() throws {
+        let viewModel = EarthquakesViewModel(service: FailureService())
+        
+        let expectation = expectation(description: "State expectation")
+        expectation.expectedFulfillmentCount = 2
+        
+        let cancellable = viewModel.$state.sink { newState in
+            expectation.fulfill()
+        }
+        
+        viewModel.load()
+        
+        wait(for: [expectation], timeout: 1)
+        
+        switch viewModel.state {
+        case .failure:
+            break
+        default:
+            XCTFail("Invalid state")
+        }
+        // if Equatable
+//        XCTAssertEqual(viewModel.state, .failure)
     }
+    
+    func testLoadedState() throws {
+        let viewModel = EarthquakesViewModel(service: MockService())
+        
+        let expectation = expectation(description: "State expectation")
+        expectation.expectedFulfillmentCount = 2
+        
+        let cancellable = viewModel.$state.sink { newState in
+            expectation.fulfill()
+        }
+        
+        viewModel.load()
+        
+        wait(for: [expectation], timeout: 1)
+        
+        switch viewModel.state {
+        case .loaded(let earthquakes):
+            XCTAssertEqual(earthquakes.count, 1)
+            XCTAssertEqual(earthquakes.first?.id, "123")
+        default:
+            XCTFail("Invalid state")
+        }
+        // if Equatable
+//        XCTAssertEqual(viewModel.state, .failure)
+    }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+extension EarthquakesTests {
+    enum TestError: Error {
+        case test
+    }
+    
+    final class FailureService: EarthquakesService {
+        func load() async throws -> [EarthquakeModel] {
+            throw TestError.test
         }
     }
-
+    
+    final class MockService: EarthquakesService {
+        func load() async throws -> [EarthquakeModel] {
+            return [EarthquakeModel(id: "123", src: "asd", magnitude: 5.5)]
+        }
+    }
 }
